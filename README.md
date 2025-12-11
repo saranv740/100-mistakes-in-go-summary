@@ -17,3 +17,9 @@
 14. To avoid naming collisions between variables and packages, leading to confusion or perhaps even bugs, use unique names for each one. If this isn’t feasible, use an import alias to change the qualifier to differentiate the package name from the variable name, or think of a better name.
 15. To help clients and maintainers understand your code’s purpose, document exported elements.
 16. To improve code quality and consistency, use linters and formatters.
+---
+## 2. Data types
+1. When doing operations with integers, watch out for numbers start with 0, it might represent a different format of integer starting with ```0o``` represents an octal representation. so ```010``` represents **8** instead of **19**. There are other formats like:
+   - ```0x``` represents *hexadecimal*, eg: 0xF equals 15
+   - ```0b``` represents *binary*, eg: 0b100 equals 4
+   - ```3i``` represents *imaginary*, eg: 3i
